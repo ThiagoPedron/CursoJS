@@ -26,6 +26,7 @@ console.log(sumValues)
 
 
 
+// EX 2
 
 
 
