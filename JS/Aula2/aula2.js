@@ -186,10 +186,20 @@
 // const p = new Product("Car",20,3)
 // console.log(p);
 
-// Object.assign( ) é usado para criar um objeto juntando dois, caso queria apenas duplicar um objeto pode passar o primeiro como objeto vazio
-const Product = {name : "product", price:1.4}
-const cup = Object.assign({},Product)
-cup.name = "Cup"
-cup.price = 1.5
-console.log(cup);
-console.log(Product);
+// // Object.assign( ) é usado para criar um objeto juntando dois, caso queria apenas duplicar um objeto pode passar o primeiro como objeto vazio
+// const Product = {name : "product", price:1.4}
+// const cup = Object.assign({},Product)
+// cup.name = "Cup"
+// cup.price = 1.5
+// console.log(cup);
+// console.log(Product);
+
+
+
+var cpf = prompt("Digite um CPF")
+cpf.forEach(element => {
+    console.log(element);
+});
+
+
+
