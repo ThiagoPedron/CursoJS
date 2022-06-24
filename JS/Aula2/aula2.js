@@ -193,13 +193,3 @@
 // cup.price = 1.5
 // console.log(cup);
 // console.log(Product);
-
-
-
-var cpf = prompt("Digite um CPF")
-cpf.forEach(element => {
-    console.log(element);
-});
-
-
-

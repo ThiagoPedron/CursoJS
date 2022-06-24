@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senhas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Gerador de Senhas</h1>
+            <textarea id="senha" disabled="disabled" placeholder="Senha Gerada ..." ></textarea>
+            <input type="number" id="number" class="number" placeholder="Quantidade de caracteres">
+            <div>
+                <input type="checkbox" name="caracter" id="1">
+                <span>Maiúsculas</span>
+                
+            </div>
+            <div>
+                <input type="checkbox" name="caracter" id="2">
+                <span>Minúsculas</span>
+               
+            </div>
+            <div>
+                <input type="checkbox" name="caracter" id="3">
+                <span>Números</span>
+               
+            </div>
+    
+            <div>
+                <input type="checkbox" name="caracter" id="4">
+                <span>Símbolos</span>
+               
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="GeraSenha()">Gerar Senha</button>
+            <button onclick="Copiar()">Copiar</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
