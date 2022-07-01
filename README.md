@@ -4,4 +4,5 @@
     
     
 # Para rodar a API
+    npm init -y
     npm install express mssql sequelize
