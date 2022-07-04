@@ -6,3 +6,6 @@
 # Para rodar a API
     npm init -y
     npm install express mssql sequelize
+
+# Iniciar Projeto React
+    npx create-react-app nome_projeto
