@@ -1,0 +1,22 @@
+.table h1,h4{
+    text-align: center;
+}
+.no-sort::after { display: none!important; }
+.no-sort::before { display: none!important; }
+.no-sort { pointer-events: none!important; cursor: default!important; }
+.container{
+    margin-top: 10em;
+}
+h5{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+td,th{
+    text-align: center !important;
+}
+
+.modal-dialog{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px ;
+}
