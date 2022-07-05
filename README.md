@@ -9,7 +9,7 @@
 
 ## 🔨 Iniciar Projeto React
     1° - npx create-react-app nome_projeto
-    2° - dentro de SCR apagar tudo menos App.css, App.js, index.js
+    2° - dentro de SCR apagar tudo menos index.js
     3° - dentro de PUBLIC apagar tudo menos index.html
 
 
