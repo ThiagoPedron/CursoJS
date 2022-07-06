@@ -16,6 +16,8 @@
 ## ✔️ Configuração inicial do Projeto React
 
 # Index.js
+````
+```
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -25,9 +27,12 @@ root.render(
 <App />
 </React.StrictMode>
 );
+```
+````
 
 # App.js
-
+````
+```
 import './App.css';
 function App() {
     return (
@@ -37,8 +42,11 @@ function App() {
 
 export default App;
 
-
+```
+````
 # Index.html
+````
+```
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -53,4 +61,27 @@ export default App;
     </body>
 </html>
 
+```
+````
 
+
+## ✨ vs-code-styled-components
+    npm install styled-componente
+## 📄 react icons
+    npm install react-icon
+
+## react-boostrap
+    https://react-bootstrap.github.io/getting-started/introduction
+
+
+## Rotas
+    npm install react-router-dom
+## Rotas privadas
+    npm install  prop-types
+## Toastify
+    mostra alerta de erros altomáticos
+    npm i react-toastify
+
+## Redux 
+    verifica se esta logado a todo tempo
+    npm i redux react-redux redux-saga redux-persist
