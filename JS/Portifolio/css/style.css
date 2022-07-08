@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  height: 150em;
   color: whitesmoke;
+  background-color: black;
 }
 
 .princ {
@@ -21,7 +22,7 @@ body {
 }
 
 
-img{
+.content img{
     margin-right: 1em;
 }
 
@@ -33,4 +34,89 @@ img{
 }
 .hard{
     height: 20em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.hard img{
+    margin: 1em;
+}
+.soft img{
+    margin: 1em;
+}
+.skils{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.soft h1{
+    margin-top: 10em;
+}
+
+.soft{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 50em;
+}
+.skilset{
+    margin-top: 10em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user{
+    width: 10em;
+    border-radius: 32% 41% 0% 37% / 25% 46% 36% 28%  ;
+    rotate: 10;
+}
+
+
+.general-info{
+    margin-bottom: 10em;
+    height: 30em;
+
+}
+.general-info h1{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.general-info img{
+    border-radius: 59% 41% 49% 51% / 45% 72% 28% 55% ;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.ifo-card img{
+    width: 10em;
+    height: 10em;
+}
+
+.contactme{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+.contact{
+    margin: 1em;
+}
+.contact  a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+a img{
+    width: 2em;
 }
