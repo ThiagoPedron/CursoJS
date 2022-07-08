@@ -1,27 +1,13 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import createSagaMiddleware from 'redux-saga';
 
-const initialState = {
-    logado: false,
-}; // Todos os estados iniciais
+import rootReducer from './modules/rootReducer';
+import rootSaga from './modules/rootSagas';
 
-const reducer = (state = initialState, action) => {
-    const newState = { ...state }; // Criamos o novo estado 
-    switch (action.type) {
-        case 'LOGIN':
-            newState.logado = true; // Caso a ação seja de login deixamos o estado como verdadeiro
+const sagaMiddleware = createSagaMiddleware();
 
-            return newState;
+const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 
-        case 'LOGOUT':
-            newState.logado = false; // Caso a ação seja de logout deixamos o estado como falso
-
-            return newState;
-
-        default:
-            return state;
-    }
-};
-
-const store = createStore(reducer);
+sagaMiddleware.run(rootSaga);
 
 export default store;

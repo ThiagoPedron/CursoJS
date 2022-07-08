@@ -2,9 +2,9 @@ import React from 'react';
 import { FaHome, FaUserAlt, FaSignOutAlt } from 'react-icons/fa';
 import { Nav } from './styled';
 import { useDispatch, useSelector } from 'react-redux';
-
+import * as usuarioLogado from '../../store/modules/usuarioLogado/actions'
 export default function Header() {
-    const logado = useSelector(state => state.logado);
+    const logado = useSelector(state => state.usuarioLogadoReducer.logado);
 
     const dispath = useDispatch();
 
@@ -12,17 +12,13 @@ export default function Header() {
         e.preventDefault(); // Desativamos as funções normais do botão para que a pagina não seja atualizada
 
 
-        dispath({
-            type: "LOGIN" // Passamos que o tipo da ação é de login
-        });
+        dispath(usuarioLogado.login_request())
     }
 
     function handleLogout(e) {
         e.preventDefault();
 
-        dispath({
-            type: "LOGOUT" // Passamos que o tipo da ação é de logout
-        });
+        dispath(usuarioLogado.logout_request())
     }
     return (<Nav>
         {logado ? 'Logado' : 'Não Logado'}

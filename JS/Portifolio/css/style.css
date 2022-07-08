@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.princ {
+  background: url("/img/fundo.svg") no-repeat top fixed;
+  background-size: cover;
+  width: 100%;
+  height: 50em;
+  display: flex;
+  align-items: flex-end;
+  padding: 5em;
+}
+.content{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+img{
+    margin-right: 1em;
+}
+
+.container{
+    margin-top: 5em;
+}
+.hard h1{
+    text-align: center;
+}
+.hard{
+    width: 10em;
+    height: 10em;
+    border-radius: 71% 29% 71% 29% / 30% 60% 40% 70%  ;
+    background-color: rgb(104, 104, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

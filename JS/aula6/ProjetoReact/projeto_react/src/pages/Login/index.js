@@ -6,10 +6,7 @@ export default function Login() {
         <Container>
             <Title isRed>
                 Login
-                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies leo et urna fringilla, tempus dictum est gravida.</ small>
-
             </Title>
-            <p>Pellentesque facilisis tempus lobortis.</p>
         </Container>
     );
 };
