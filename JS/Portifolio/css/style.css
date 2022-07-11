@@ -96,10 +96,22 @@ body {
     justify-content: space-between;
     text-align: center;
 }
+
+
+
+
 .ifo-card img{
     width: 10em;
     height: 10em;
 }
+
+@media only screen and (max-width: 600px) {
+    .ifo-card img{
+        width: 5em;
+        height: 5em;
+    }
+    
+  }
 
 .contactme{
     display: flex;
@@ -119,4 +131,27 @@ body {
 }
 a img{
     width: 2em;
+}
+
+
+[data-anime]{
+    opacity: 0;
+    transition:  .3s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-anime ="top"].some{
+    transform: translate3d(0px, -50px, 0px);
 }
