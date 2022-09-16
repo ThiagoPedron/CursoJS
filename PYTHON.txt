@@ -1,0 +1,26 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+# dataset = [random.randint(14,20) for i in range(42)]
+from scipy.stats import norm
+
+dados1 = [108, 139, 120, 123, 120, 132, 123, 131, 131,
+          157, 150, 124, 111, 101, 135, 119, 116, 117,
+          127, 128, 139, 119, 118, 114, 127]
+dados = {"ExercícioMinutos": dados1}
+
+dataset = pd.DataFrame(data=dados)
+
+mean = np.mean(dataset['ExercícioMinutos'])
+std = np.std(dataset['ExercícioMinutos'], ddof=1)
+min = np.min(dataset['ExercícioMinutos'])
+max = np.min(dataset['ExercícioMinutos'])
+plt.title("Tempo de exercício (min)")
+print(mean, std)
+plt.hist(dataset['ExercícioMinutos'])
+plt.show()
+
+fig1, ax1 = plt.subplots()
+ax1.set_title('Tempo de exercício (min)')
+ax1.boxplot(dataset)
+plt.show()
